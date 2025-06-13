@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nos Maillots - Vente Raja Club Athletic</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0b3d0b; /* vert foncé */
+      color: white;
+      margin: 0;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      color: #4CAF50;
+      margin-bottom: 40px;
+    }
+    .maillots-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+    .maillot {
+      background-color: #142914; /* vert très foncé */
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0,255,0,0.3);
+      width: 280px;
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+    .maillot:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 25px rgba(0,255,0,0.6);
+    }
+    .maillot img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+    .prix {
+      font-size: 1.3em;
+      margin-bottom: 10px;
+      color: #a5d6a7;
+      font-weight: bold;
+    }
+    .tailles {
+      list-style-type: none;
+      padding: 0;
+      margin-bottom: 15px;
+      color: #c8e6c9;
+    }
+    .tailles li {
+      margin: 5px 0;
+    }
+    .btn-commander {
+      background-color: #4CAF50;
+      border: none;
+      padding: 12px 25px;
+      border-radius: 25px;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .btn-commander:hover {
+      background-color: #357a38;
+    }
+    /* Menu commun pour relier les pages */
+    nav {
+      background-color: #1f6f1f;
+      padding: 15px 0;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 20px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 18px;
+      padding: 5px 12px;
+      border-radius: 6px;
+    }
+    nav a:hover {
+      background-color: #4CAF50;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html">Accueil</a>
+    <a href="historique.html">Historique</a>
+    <a href="maillots.html">Maillots</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <h1>Nos Maillots Officiels du Raja Club Athletic</h1>
+
+  <div class="maillots-container">
+
+    <div class="maillot">
+      <img src="images/maillot1.jpg" alt="Maillot domicile Raja 2024" />
+      <div class="prix">Prix : 550 DH</div>
+      <ul class="tailles">
+        <li>Taille S</li>
+        <li>Taille M</li>
+        <li>Taille L</li>
+        <li>Taille XL</li>
+      </ul>
+      <a href="#" class="btn-commander">Commander</a>
+    </div>
+
+    <div class="maillot">
+      <img src="images/maillot2.jpg" alt="Maillot extérieur Raja 2024" />
+      <div class="prix">Prix : 580 DH</div>
+      <ul class="tailles">
+        <li>Taille S</li>
+        <li>Taille M</li>
+        <li>Taille L</li>
+        <li>Taille XL</li>
+      </ul>
+      <a href="#" class="btn-commander">Commander</a>
+    </div>
+
+    <div class="maillot">
+      <img src="images/maillot3.jpg" alt="Maillot third Raja 2024" />
+      <div class="prix">Prix : 600 DH</div>
+      <ul class="tailles">
+        <li>Taille S</li>
+        <li>Taille M</li>
+        <li>Taille L</li>
+        <li>Taille XL</li>
+      </ul>
+      <a href="#" class="btn-commander">Commander</a>
+    </div>
+
+  </div>
+
+</body>
+</html>

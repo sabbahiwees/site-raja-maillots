@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact - Site Raja Maillots</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #004d00, #000000);
+      color: #d4f1be;
+      margin: 0;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      color: #a0d468;
+      margin-bottom: 20px;
+    }
+    .container {
+      max-width: 700px;
+      margin: auto;
+      background-color: rgba(0, 50, 0, 0.8);
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #4caf50;
+    }
+    .photo-cv {
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 30px;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .photo-cv img {
+      max-width: 200px;
+      border-radius: 15px;
+      border: 3px solid #4caf50;
+      box-shadow: 0 0 8px #76c043;
+    }
+    .cv-link {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: #a0d468;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 18px;
+      border: 2px solid #4caf50;
+      padding: 10px 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 5px #76c043;
+      transition: background-color 0.3s ease;
+    }
+    .cv-link:hover {
+      background-color: #4caf50;
+      color: #000;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    label {
+      font-weight: bold;
+    }
+    input, textarea {
+      padding: 10px;
+      border-radius: 8px;
+      border: none;
+      font-size: 16px;
+      resize: vertical;
+    }
+    button {
+      background-color: #4caf50;
+      color: #000;
+      font-weight: bold;
+      padding: 12px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #76c043;
+    }
+    .thanks {
+      margin-top: 25px;
+      text-align: center;
+      font-style: italic;
+      font-size: 18px;
+      color: #a0d468;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Contact & Présentation</h1>
+    <div class="photo-cv">
+      <img src="images/photo_perso.jpg" alt="Photo personnelle" />
+      <a href="images/cv_wessal.pdf" class="cv-link" target="_blank" download>📄 Télécharger mon CV</a>
+    </div>
+    <form action="#" method="post">
+      <label for="nom">Nom :</label>
+      <input type="text" id="nom" name="nom" placeholder="Votre nom" required />
+      
+      <label for="email">Email :</label>
+      <input type="email" id="email" name="email" placeholder="Votre email" required />
+      
+      <label for="message">Message :</label>
+      <textarea id="message" name="message" rows="5" placeholder="Votre message" required></textarea>
+      
+      <button type="submit">Envoyer</button>
+    </form>
+    <p class="thanks">Merci de votre visite ! Je suis un grand supporteur du Raja Club Athletic. ⚽💚</p>
+  </div>
+</body>
+</html>
